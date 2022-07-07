@@ -32,7 +32,12 @@ public class Principal {
         //System.out.println(".... fin ....");
         
         Estante e = new Estante(10, "Libros de informatica", pl);
-        e.mostrar();
+        // e.mostrar();
+        
+        ColaEstante ce = new ColaEstante(1);
+        ce.adiCola(e);        
+        
+        ce.mostrarColaSimple();
     }
     
 }
