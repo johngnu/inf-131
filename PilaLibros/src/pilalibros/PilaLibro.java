@@ -56,7 +56,7 @@ public class PilaLibro {
         Libro x;
         while (!esVacia()) {
             x = eliPila();
-            System.out.print(" " + x);
+            x.mostrarLibro();
             paux.adiPila(x);
         }
         vaciarPila(paux);
