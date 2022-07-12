@@ -26,6 +26,11 @@ public class Huesped {
         } else {
             habitacion.mostrar();
         }
+        if (pc.esVacia()) {
+            System.out.println("cliente no tiene consumo...");
+        } else {
+            pc.mostrarPila();
+        }
     }
 
     public String getCarnet() {
@@ -66,6 +71,10 @@ public class Huesped {
 
     public void setHabitacion(Habitacion habitacion) {
         this.habitacion = habitacion;
+    }
+
+    public void agregarConsumo(Consumo c) {
+        pc.adiPila(c);
     }
 
 }
