@@ -22,7 +22,7 @@ public class Mascota {
     }
 
     public void mostrar() {
-        System.out.println("<" + nombre + "-" + raza + "-" + edad + "-" + incapacidad + ">");
+        System.out.println("Nombre: " + nombre + " Raza: " + raza + " Edad: " + edad + " Incapacidad: " + incapacidad);
     }
 
     public String getNombre() {
