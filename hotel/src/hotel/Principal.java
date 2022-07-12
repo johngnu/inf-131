@@ -36,12 +36,12 @@ public class Principal {
         h1.setHabitacion(hb1);
         h2.setHabitacion(hb3);
         
-        h1.mostrar();
-        
-        h3.mostrar();
-        
+        //h1.mostrar();        
+        //h3.mostrar();        
         h1.agregarConsumo(c3);
-        h1.mostrar();
+        //h1.mostrar();
+        
+        ch.mostrarColaSimple();
         
     }
     
