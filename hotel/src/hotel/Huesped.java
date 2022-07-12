@@ -19,6 +19,10 @@ public class Huesped {
         pc = new PilaConsumo(10);
     }
 
+    public void mostrar() {
+        System.out.println("- Carnet: " + carnet + " Nombre: " + nombre + " Cant. dias: " + cantidadDias);
+    }
+
     public String getCarnet() {
         return carnet;
     }
