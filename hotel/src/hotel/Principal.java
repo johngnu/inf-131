@@ -22,9 +22,15 @@ public class Principal {
         Huesped h1 = new Huesped("123456", "Juan Perez", 8);
         Huesped h2 = new Huesped("334455", "Helen Carolina", 4);
         Huesped h3 = new Huesped("110022", "Dempy Morales", 2);
-        Huesped h4 = new Huesped("445555", "Roberto Gomez", 1);
+        //Huesped h4 = new Huesped("445555", "Roberto Gomez", 1);
         
+        // asignacion de habitaciones
+        h1.setHabitacion(hb1);
+        h2.setHabitacion(hb3);
         
+        h1.mostrar();
+        
+        h3.mostrar();
         
     }
     

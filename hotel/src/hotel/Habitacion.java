@@ -49,5 +49,10 @@ public class Habitacion {
     public void setPrecioDia(int precioDia) {
         this.precioDia = precioDia;
     }
+    
+    public void mostrar() {
+        System.out.println(" --- Datos habitacion ---");
+        System.out.println("Nro.: " + nroHabitacion + " Piso: " + piso + " NroCamas: " + nroCamas + " Precio/dia: " + precioDia);
+    }
 
 }

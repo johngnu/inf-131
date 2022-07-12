@@ -21,6 +21,11 @@ public class Huesped {
 
     public void mostrar() {
         System.out.println("- Carnet: " + carnet + " Nombre: " + nombre + " Cant. dias: " + cantidadDias);
+        if (habitacion == null) {
+            System.out.println("Huesped sin habitacion: ");
+        } else {
+            habitacion.mostrar();
+        }
     }
 
     public String getCarnet() {
@@ -45,6 +50,22 @@ public class Huesped {
 
     public void setCantidadDias(int cantidadDias) {
         this.cantidadDias = cantidadDias;
+    }
+
+    public PilaConsumo getPc() {
+        return pc;
+    }
+
+    public void setPc(PilaConsumo pc) {
+        this.pc = pc;
+    }
+
+    public Habitacion getHabitacion() {
+        return habitacion;
+    }
+
+    public void setHabitacion(Habitacion habitacion) {
+        this.habitacion = habitacion;
     }
 
 }
