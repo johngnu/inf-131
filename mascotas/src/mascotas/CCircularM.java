@@ -34,25 +34,25 @@ public class CCircularM {
         return (fin - ini);
     }
 
-    void adicionar(Mascota elem) {
-        if (!esllena()) {
-            fin++;  //v[fin+1]=elemento;
-            v[fin] = elem;    //fin++;
-        } else {
+    void adicionar(Mascota x) {
+        if (esllena()) {
             System.out.println("Cola Circular llena...!!!");
+        } else {
+            fin++;
+            v[fin] = x;
         }
     }
 
     Mascota eliminar() {
         Mascota elem = null;
-        if (!esvacia()) {
+        if (esvacia()) {
+            System.out.println("Cola Simple vacia");
+        } else {
             ini++;
             elem = v[ini];
             if (ini == fin) {
                 ini = fin = 0;
             }
-        } else {
-            System.out.println("Cola Simple vacia");
         }
         return (elem);
     }
@@ -77,6 +77,5 @@ public class CCircularM {
         while (!a.esvacia()) {
             adicionar(a.eliminar());
         }
-
     }
 }

@@ -16,7 +16,7 @@ public class Principal {
         Habitacion hb2 = new Habitacion(2, 1, 2, 200);
         Habitacion hb3 = new Habitacion(3, 1, 1, 100);
         Habitacion hb4 = new Habitacion(4, 1, 3, 300);
-
+                
         // Productos
         Consumo c1 = new Consumo("Coca cola", 3);
         Consumo c2 = new Consumo("Galletas", 1);
